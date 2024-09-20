@@ -1,0 +1,109 @@
+body {
+  font-family: 'Helvetica', Times, serif;
+  background-color: #b4b4b4;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+
+Main style css
+*/
+
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #07080a;
+}
+
+p {
+  font-size: 18px;
+}
+
+.box h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.box p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-between; /* Adds space between the two divs */
+  margin: 20px;
+}
+
+.box {
+  flex: 1; /* Makes both boxes take up equal space */
+  margin: 10px; /* Adds some space around each box */
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.VolvoV90 {
+  width: 300px;
+}
+
+.BMW540i {
+  width: 300px;
+}
+
+.Mercedes-Benz {
+  width: 300px;
+}
+
+.SubaruOutback {
+  width: 300px;
+}
+
+.BMWM6 {
+  width: 300px;
+}
+
+.AUDIA8 {
+  width: 300px;
+}
+
+@media (min-width: 600px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .row-container {
+    flex-direction: column; /* Stacks the boxes vertically */
+  }
+
+  .box {
+    margin: 10px 0; /* Adds vertical margin between the stacked boxes */
+  }
+}
+
+@media (max-width: 750px) {
+  .footer-info {
+    flex-direction: row;
+    padding: 2px;
+  }
+}
+
+aside {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-left: 10px;
+  border-left: 3px solid #ccc;
+}

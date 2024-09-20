@@ -3,6 +3,9 @@ body {
   font-family: 16px;
 
   background-color: hsl(0, 0%, 95%);
+
+  padding: 0;
+  margin: 0;
 }
 
 main {
@@ -11,6 +14,65 @@ main {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(67, 67, 67);
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: blue;
+}
+
+/* Style the header container */
+.header {
+  display: flex;
+  justify-content: space-between; /* This pushes the logo and nav to opposite ends */
+  align-items: center;
+  background-color: white;
+  padding: 20px; /* Adjust as needed */
+}
+
+/* Style the logo */
+.logo h1 {
+  margin: 0; /* Remove default margin for h1 */
+  font-size: 24px; /* Customize font size */
+}
+
+/* Style the navigation links */
+.header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-right: 20px; /* Add spacing between navigation items */
+}
+
+.header nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+.header nav ul li a {
+  text-decoration: none;
 }
 
 .buttonGridContainer1 {
@@ -35,6 +97,7 @@ main {
 img {
   width: 100%;
   border-radius: 1rem;
+  background-color: hsl(0, 0%, 95%);
 }
 
 button {
@@ -53,4 +116,99 @@ button:hover {
 
 button:active {
   transform: scale(0.95);
+}
+
+/*Davud's css*/
+
+h1 {
+  color: #07080a;
+}
+
+p {
+  font-size: 18px;
+}
+
+.box h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.box p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-between; /* Adds space between the two divs */
+  margin: 20px;
+}
+
+.box {
+  flex: 1; /* Makes both boxes take up equal space */
+  margin: 10px; /* Adds some space around each box */
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+.VolvoV90 {
+  width: 300px;
+}
+
+.BMW540i {
+  width: 300px;
+}
+
+.Mercedes-Benz {
+  width: 300px;
+}
+
+.SubaruOutback {
+  width: 300px;
+}
+
+.BMWM6 {
+  width: 300px;
+}
+
+.AUDIA8 {
+  width: 300px;
+}
+
+/* Mobile */
+/* Tablet */
+
+/* Desktop */
+@media (min-width: 600px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .row-container {
+    flex-direction: column; /* Stacks the boxes vertically */
+  }
+
+  .box {
+    margin: 10px 0; /* Adds vertical margin between the stacked boxes */
+  }
+}
+/* 
+@media (max-width: 750px) {
+  .footer-info {
+    flex-direction: row;
+    padding: 2px;
+  }
+} */
+
+aside {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-left: 10px;
+  border-left: 3px solid #ccc;
 }
