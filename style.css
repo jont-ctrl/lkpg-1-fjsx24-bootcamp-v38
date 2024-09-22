@@ -94,6 +94,13 @@ footer li {
   margin: auto;
 }
 
+/* Make main content full width on mobile/tablet on index.html */
+@media (max-width: 768px) {
+  .mainIndex {
+    max-width: 100%;
+  }
+}
+
 /* Buttons stack */
 
 .buttonGridContainer {
@@ -102,6 +109,9 @@ footer li {
   justify-content: center;
   align-items: center;
   align-items: stretch;
+  margin: 3rem;
+
+  width: 100%;
 }
 
 .buttonRow {
