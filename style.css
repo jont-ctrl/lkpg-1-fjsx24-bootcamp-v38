@@ -72,15 +72,55 @@ a:hover {
 }
 
 footer {
-  padding: 1rem;
+  padding: 3rem 1rem 5rem 1rem;
   margin-top: 5rem;
-
-  display: grid;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(8, 8, 8);
   color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Change css grid columns on footer for mobile  / desktop */
+
+@media (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+input {
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletterSignup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 footer img {
