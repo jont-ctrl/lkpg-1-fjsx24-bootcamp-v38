@@ -21,12 +21,9 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="mainIndex">
       <h2>Linköpings bästa bilhandlare</h2>
-
-      <div class="header">
-        <img src="images\car red.jpg" alt="red car" />
-      </div>
+      <img src="images\car red.jpg" alt="röd bil åker på en väg" />
       <article>
         <p>
           Bilhandlare med Nya och Begagnade bilar- Robinson Bil AB Vi är en
@@ -37,23 +34,43 @@
           bil oavsett märke!
         </p>
       </article>
-      <div class="buttonGridContainer1">
-        <button class="buttonGrid1">Bilar i lager</button>
-        <button class="buttonGrid1">Kampanjer</button>
-        <button class="buttonGrid1">Kontakta oss</button>
-        <button class="buttonGrid2">Boka service per telefon</button>
-        <button class="buttonGrid2">Boka service online</button>
+      <div class="buttonGridContainer">
+        <div class="buttonRow">
+          <button class="buttonStack">Bilar i lager</button>
+          <button class="buttonStack">Kampanjer</button>
+          <button class="buttonStack">Kontakta oss</button>
+        </div>
+        <div class="buttonRow">
+          <button class="buttonStack">Boka service per telefon</button>
+          <button class="buttonStack">Boka service online</button>
+        </div>
       </div>
       <img src="images\car-logos.png" alt="bil märken logos" />
       <p>Funnits sedan 1970</p>
     </main>
     <footer>
-      <div class="footer1">
+      <div class="footer-info">
         <p>Robinsson Bil AB</p>
         <p>Adress: Linköpingsvägen 1.</p>
-        <p><a href="kontakt.html">Kontakta oss här</a></p>
-        <p>Mail: Robinssonbil@hotmail.com.</p>
+        <p>Telefon: 0123-456 789</p>
+        <p>E-post: info@robinssonbil.se</p>
+        <p>Öppettider: Mån-Fre 09:00 - 17:00</p>
       </div>
+      <div class="social-media">
+        <a href="#"><img src="images/facebook-icon.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/instagram-icon.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
+      </div>
+      <ul>
+        <li><a href="#">Om oss</a></li>
+        <li><a href="#">Integritetspolicy</a></li>
+        <li><a href="#">Kundtjänst</a></li>
+      </ul>
+      <form>
+        <label for="email">Registrera dig för vårt nyhetsbrev:</label>
+        <input type="email" id="email" placeholder="Din e-post" required />
+        <button type="submit">Prenumerera</button>
+      </form>
     </footer>
   </body>
 </html>

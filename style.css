@@ -1,9 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-family: 16px;
-
-  background-color: hsl(0, 0%, 95%);
-
+  background-color: hsl(0, 0%, 98%);
   padding: 0;
   margin: 0;
 }
@@ -23,36 +21,56 @@ header {
   align-items: center;
 }
 
+.header nav ul li a {
+  text-decoration: none;
+}
+
+header li:hover {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgb(86, 86, 209);
+  text-decoration: underline;
+}
+
 footer {
+  padding: 1rem;
+  margin-top: 5rem;
+
   display: grid;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgb(67, 67, 67);
+  background-color: rgb(8, 8, 8);
   color: white;
+}
+
+footer img {
+  width: 3rem;
 }
 
 footer a {
-  color: white;
+  color: rgb(150, 150, 255);
 }
 
-footer a:hover {
-  color: blue;
+footer li {
+  margin: 1rem;
 }
 
 /* Style the header container */
 .header {
   display: flex;
-  justify-content: space-between; /* This pushes the logo and nav to opposite ends */
+  justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 20px; /* Adjust as needed */
+  padding: 20px;
 }
 
 /* Style the logo */
 .logo h1 {
-  margin: 0; /* Remove default margin for h1 */
-  font-size: 24px; /* Customize font size */
+  margin: 0;
+  font-size: 24px;
 }
 
 /* Style the navigation links */
@@ -64,47 +82,50 @@ footer a:hover {
 }
 
 .header nav ul li {
-  margin-right: 20px; /* Add spacing between navigation items */
+  margin-right: 20px;
 }
 
 .header nav ul li:last-child {
-  margin-right: 0; /* Remove margin from the last item */
+  margin-right: 0;
 }
 
-.header nav ul li a {
-  text-decoration: none;
+.mainIndex {
+  max-width: 75%;
+  margin: auto;
 }
 
-.buttonGridContainer1 {
-  /* background-color: red; */
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.2rem;
+/* Buttons stack */
+
+.buttonGridContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: stretch;
 }
 
-.buttonGridContainer2 {
-  background-color: green;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.buttonRow {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
 }
 
-.buttonGrid {
-  background-color: red;
+.buttonStack {
+  flex: 1;
+  margin: 0.1rem;
 }
 
 img {
   width: 100%;
   border-radius: 1rem;
-  background-color: hsl(0, 0%, 95%);
+  max-width: 100%;
 }
 
 button {
   cursor: pointer;
   border: none;
   border-radius: 1rem;
-  background-color: rgb(0, 40, 185);
+  background-color: rgb(27, 68, 215);
   color: white;
   padding: 1rem 2rem;
   transition: transform 0.1s;
