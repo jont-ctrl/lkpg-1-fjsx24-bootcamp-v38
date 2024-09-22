@@ -48,7 +48,14 @@ header li:hover {
 
 .header h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+/* H1 Logo title smaller on mobile */
+@media (max-width: 490px) {
+  .header h1 {
+    font-size: 1.1rem;
+  }
 }
 
 .header nav ul {
